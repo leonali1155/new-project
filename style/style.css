@@ -9,7 +9,13 @@ header{
     padding: 50px 240px;
 }
 .btn-primary{
-    
+    border-radius: 8px;
+    background: #ff900e;
+    padding: 20px 25px;
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: 0;
 }
 nav{
     display: flex;
@@ -45,6 +51,10 @@ nav li a{
     text-align: center;
     margin: 0 auto;
 }
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
@@ -53,4 +63,23 @@ nav li a{
 .banner-description{
     color: #727272;
 }
-.
+/* responsive style */
+/* mobile devise */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+/* tablet screen */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+
+    }
+}
